@@ -6,12 +6,14 @@
             max-width: 450px;
             margin: 10px auto;
             padding: 10px;
-            background: white;
             border-radius: 8px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             overflow: hidden;
             font-size: 0.75rem;
             color: #333;
+        }
+
+        td {
+            background: #f5f5f5;
         }
 
         .mass-schedule-table {
@@ -21,9 +23,24 @@
             font-size: 0.85rem;
         }
 
+        tr:first-child td:first-child {
+            border-top-left-radius: 10px;
+        }
+
+        tr:first-child td:last-child {
+            border-top-right-radius: 10px;
+        }
+
+        tr:nth-child(8) td:first-child {
+            border-bottom-left-radius: 10px;
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: 10px;
+        }
+
         .mass-schedule-table td {
             padding: 8px 7px;
-            border-bottom: 1px solid #e5e7eb;
             vertical-align: middle;
         }
 
@@ -34,8 +51,9 @@
         .day {
             font-weight: 700;
             width: 22%;
-            background: #f8fafc;
+            background: #dedede;
             text-transform: uppercase;
+            border-bottom: 1px solid #fff;
         }
 
 
@@ -83,12 +101,11 @@
 
                 <!-- Saturday -->
                 <tr>
-                    <td class="day saturday"><strong>Saturday</strong></td>
+                    <td class="day saturday" rowspan="2"><strong>Saturday</strong></td>
                     <td class="time">9:00 AM</td>
                     <td class="service">Adoration & Confession</td>
                 </tr>
                 <tr>
-                    <td class="day saturday"></td>
                     <td class="time">10:00 AM</td>
                     <td class="service">Holy Qurbana<br><small>followed by Novena</small></td>
                 </tr>
@@ -109,12 +126,11 @@
 
                 <!-- First Friday -->
                 <tr>
-                    <td class="day first-friday"><strong>First Friday</strong></td>
+                    <td class="day first-friday" rowspan="2"><strong>First Friday</strong></td>
                     <td class="time">6:00 PM</td>
                     <td class="service">Confession</td>
                 </tr>
                 <tr>
-                    <td class="day first-friday"></td>
                     <td class="time">7:00 PM</td>
                     <td class="service">Holy Qurbana & Adoration<br><small>(Malayalam / English)</small></td>
                 </tr>
