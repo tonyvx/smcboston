@@ -1,0 +1,126 @@
+<html>
+
+<head>
+    <style>
+        .schedule-table-container {
+            max-width: 450px;
+            margin: 10px auto;
+            padding: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            font-size: 0.75rem;
+            color: #333;
+        }
+
+        .mass-schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: sans-serif;
+            font-size: 0.85rem;
+        }
+
+        .mass-schedule-table td {
+            padding: 8px 7px;
+            border-bottom: 1px solid #e5e7eb;
+            vertical-align: middle;
+        }
+
+        .mass-schedule-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .day {
+            font-weight: 700;
+            width: 22%;
+            background: #f8fafc;
+            text-transform: uppercase;
+        }
+
+
+        .first-friday {}
+
+        .time {
+            font-weight: 400;
+
+        }
+
+        .service {
+            color: black;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+
+        small {
+            font-size: 0.75rem;
+            color: #64748b;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="schedule-table-container">
+        <table class="mass-schedule-table">
+
+            <tbody>
+                <!-- Sunday -->
+                <tr>
+                    <td class="day sunday" rowspan="3"><strong>Sunday</strong></td>
+                    <td class="time">10:00 AM</td>
+                    <td class="service">Holy Qurbana<br><small>(Malayalam)</small></td>
+                </tr>
+                <tr>
+                    <td class="time">10:00 AM</td>
+                    <td class="service">CCD</td>
+                </tr>
+                <tr>
+                    <td class="time">11:30 AM</td>
+                    <td class="service">Holy Qurbana <br /><small>(English)</small></td>
+                </tr>
+
+                <!-- Saturday -->
+                <tr>
+                    <td class="day saturday"><strong>Saturday</strong></td>
+                    <td class="time">9:00 AM</td>
+                    <td class="service">Adoration & Confession</td>
+                </tr>
+                <tr>
+                    <td class="day saturday"></td>
+                    <td class="time">10:00 AM</td>
+                    <td class="service">Holy Qurbana<br><small>followed by Novena</small></td>
+                </tr>
+
+                <!-- Monday - Friday -->
+                <tr>
+                    <td class="day weekday" rowspan="2"><strong>Monday - Friday</strong><br><small>(Rectory
+                            Chapel)</small></td>
+                    <td class="time">8:00 AM</td>
+                    <td class="service">Adoration<br><small>with Holy Rosary</small></td>
+                </tr>
+                <tr>
+                    <td class="time">9:00 AM</td>
+                    <td class="service">Holy Qurbana<br>
+                        <highlight>(Malayalam)</highlight>
+                    </td>
+                </tr>
+
+                <!-- First Friday -->
+                <tr>
+                    <td class="day first-friday"><strong>First Friday</strong></td>
+                    <td class="time">6:00 PM</td>
+                    <td class="service">Confession</td>
+                </tr>
+                <tr>
+                    <td class="day first-friday"></td>
+                    <td class="time">7:00 PM</td>
+                    <td class="service">Holy Qurbana & Adoration<br><small>(Malayalam / English)</small></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
